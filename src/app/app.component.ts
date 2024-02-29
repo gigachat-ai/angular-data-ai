@@ -39,7 +39,7 @@ export class AppComponent {
     const prompt = 'Analyse the following transactions for a month and explain what i am spending most of my money on and provide any recommendations on what i can do to better manage my finances. \n' +
       ' transaction data:\n' +
       ' \n' + JSON.stringify(this.transactionData) +
-      ' Return the answer in html'
+      ' Return the ENTIRE response in HTML ONLY'
 
     giga.ai.message.add(prompt).then(res => {
       console.log(res)
